@@ -92,7 +92,8 @@ class _MainScreenState extends State<MainScreen> {
                       ),*/
                       eyeStyle: const QrEyeStyle(
                         eyeShape: QrEyeShape.square,
-                        color: Color(0xff128760),
+                        outerColor: Color(0xff128760),
+                        dotColor: Color(0xff128760),
                         borderRadius: 10,
                       ),
                       dataModuleStyle: const QrDataModuleStyle(
@@ -101,7 +102,8 @@ class _MainScreenState extends State<MainScreen> {
                         borderRadius: 5,
                         roundedOutsideCorners: true,
                       ),
-                      embeddedImage: AssetImage('assets/images/4.0x/logo_yakka_transparent.png'),
+                      embeddedImage: AssetImage(
+                          'assets/images/4.0x/logo_yakka_transparent.png'),
                       embeddedImageStyle: QrEmbeddedImageStyle(
                         size: Size.square(40),
                         color: Colors.white,
